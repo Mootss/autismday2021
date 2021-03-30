@@ -5,7 +5,7 @@ const quoteText = blockquote.querySelector('p'),
 document.addEventListener('DOMContentLoaded', function(){
     let randNum;
     let quotes;
-    fetch('./js/quotes.json')
+    fetch('./quotes.json')
         .then(res => res.json())
         .then(data => quotes = data)
         .then(() => randNum = Math.floor(Math.random() * quotes["quotes"].length))

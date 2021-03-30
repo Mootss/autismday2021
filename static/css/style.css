@@ -63,40 +63,33 @@ header hr {
   font-size: 2.3rem;
   font-family: 'Logo', 'Bahnschrift Light', sans-serif;
   color: #292e28;
-  /*
-    text-shadow: 1px 2px 1px #C79292;
-    color: #fff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #777;
-    */
+}
+
+#logo-text span {
+  text-decoration: underline;
 }
 
 #logo-text span:nth-child(10n + 1) {
-  text-decoration: underline;
   -webkit-text-decoration-color: #d40c00;
           text-decoration-color: #d40c00;
 }
 
 #logo-text span:nth-child(10n + 2) {
-  text-decoration: underline;
   -webkit-text-decoration-color: #00a5f9;
           text-decoration-color: #00a5f9;
 }
 
 #logo-text span:nth-child(10n + 3) {
-  text-decoration: underline;
   -webkit-text-decoration-color: #ffcd00;
           text-decoration-color: #ffcd00;
 }
 
 #logo-text span:nth-child(10n + 4) {
-  text-decoration: underline;
   -webkit-text-decoration-color: #32c12c;
           text-decoration-color: #32c12c;
 }
 
 #logo-text span:nth-child(10n + 5) {
-  text-decoration: underline;
   -webkit-text-decoration-color: #32c12c;
           text-decoration-color: #32c12c;
 }
@@ -116,13 +109,14 @@ header hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 blockquote {
   font-family: 'Gelasio', 'Open Sans', sans-serif;
   padding: 30px;
   background-image: radial-gradient(#ffede3, #f4f4f4);
-  border: 1px solid #eee;
   border-radius: 50%;
   max-width: 400px;
 }
@@ -138,7 +132,7 @@ blockquote .quote-l, blockquote .quote-r {
   text-align: left;
   display: block;
   color: palevioletred;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
 }
 
 blockquote .quote-r {

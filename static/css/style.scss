@@ -10,14 +10,6 @@ $light-blue : #00a5f9;
 $light-red : #d40c00;
 $deep-purple : #682cbf;
 
-@font-face{
-    font-family: 'Logo';
-    src: url('../fonts/ArtefakCleanTypeface-6Yxg1.otf'),
-         url('../fonts/ArtefakVintageTypeface-yw1XV.otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -63,30 +55,27 @@ header{
     font-size: 2.3rem;
     font-family: 'Logo', 'Bahnschrift Light', sans-serif;
     color: #292e28;
-    /*
-    text-shadow: 1px 2px 1px #C79292;
-    color: #fff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #777;
-    */
-    span:nth-child(10n + 1){
+    
+    // text-shadow: 1px 2px 1px #C79292;
+    // color: #fff;
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: #777;
+    span{
         text-decoration: underline;
+    }
+    span:nth-child(10n + 1){
         text-decoration-color: $light-red;
     }
     span:nth-child(10n + 2){
-        text-decoration: underline;
         text-decoration-color: $light-blue;
     }
     span:nth-child(10n + 3){
-        text-decoration: underline;
         text-decoration-color: $amber;
     }
     span:nth-child(10n + 4){
-        text-decoration: underline;
         text-decoration-color: $green;
     }
     span:nth-child(10n + 5){
-        text-decoration: underline;
         text-decoration-color: $green;
     }
 }
@@ -97,13 +86,15 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 blockquote{
     font-family: 'Gelasio', 'Open Sans', sans-serif;
     padding: 30px;
     background-image: radial-gradient($peach, #f4f4f4);
-    border: 1px solid #eee;
+    //border: 1px solid #eee;
     border-radius: 50%;
     max-width: 400px;
     p{
@@ -116,7 +107,7 @@ blockquote{
         text-align: left;
         display: block;
         color: palevioletred;
-        font-size: 1.9rem;
+        font-size: 2.3rem;
     }
     .quote-r{
         @extend .quote-l;
@@ -131,6 +122,7 @@ blockquote{
         color: #555;
     }
 }
+
 footer{
     background-color: #25262a;
     padding-bottom: 25px;
