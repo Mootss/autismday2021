@@ -81,13 +81,29 @@ header{
 }
 
 .container{
-    padding: 15px;
+    //@warn: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 800px;
     margin: auto;
+}
+
+#cover-img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+
+article{
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+    }
 }
 
 blockquote{
@@ -125,7 +141,7 @@ blockquote{
 
 footer{
     background-color: #25262a;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,10 +168,10 @@ footer{
 }
 
 /* media queries */
-@media (max-width: 768px){
-    /*#logo-text{
-        font-size: 10px;
-    }*/
+@media (max-width: 800px){
+    #cover-img{
+        border-radius: 0;
+    }
 }
 @media (max-width: 560px){
     header{
