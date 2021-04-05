@@ -22,11 +22,11 @@
 
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Mootss/autismday2021/static/fonts/logo-font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Mootss/autismday2021@main/static/fonts/logo-font.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Mootss/autismday2021/static/img/puzzle-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Mootss/autismday2021@main/static/img/puzzle-logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/3e48a5d06f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,7 +34,7 @@
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
     <header>
             <a href="javascript:void(0);">
-                <img src="https://cdn.jsdelivr.net/gh/Mootss/autismday2021/static/img/puzzle-logo.png">
+                <img src="https://cdn.jsdelivr.net/gh/Mootss/autismday2021@main/static/img/puzzle-logo.png">
                 <span id="logo-text">
                     <span>World </span>
                     <span>Autism </span>
@@ -48,7 +48,7 @@
 
     <div class="container">
 
-        <img id="cover-img" src="../static/img/sample-image.jpg" alt="">
+        <img id="cover-img" src="https://cdn.jsdelivr.net/gh/Mootss/autismday2021@main/static/img/sample-image.jpg" alt="">
 
         <blockquote>
             <span class="quote-l"><i class="fas fa-quote-left"></i></span>
@@ -59,9 +59,19 @@
 
         <article>
             <p>&emsp;&emsp; On World Autism Awareness Day, we recognize and celebrate the rights of people with autism. let us stand together, support each other and show solidarity for people with autism. </p>
-            <p>&emsp;&emsp; People with autism may seem different, especially in the way they interact with others, but people with autism have as much right as anybody else to enjoy quality education, a sustainable job, the freedom to speak their mind, and a good life as a whole. All of these are brought into the spotlight on world autism awareness day</p>
+            <p>&emsp;&emsp; People with autism may seem different, especially in the way they interact with others, but people with autism have as much right as anybody else to enjoy quality education, a sustainable job, the freedom to speak their mind, and a good life as a whole. All of these are brought into the spotlight on world autism awareness day.</p>
             <p>&emsp;&emsp; What's more, World Autism Awareness Day goes one step further to celebrate the unique talents of those with autism, while putting a huge focus on the warm embrace and welcome that these skills deserve through community events around the globe.</p>
         </article>
+
+        <button class="accordion">Why is Autism Awareness Day so important?</button>
+        <div class="panel">
+            <p>World Autism Awareness Day is observed annually on the 2nd of April to raise awareness about the challenges that people with autism face. It also aims to explore educational and healthcare programs that will make life easier for them.</p>
+        </div>
+
+        <button class="accordion">What is important to know about autism?</button>
+        <div class="panel">
+            <p>Statistics show that boys are five times more likely than girls to have autism. Although it begins in infancy, the symptoms of autism don't usually appear until later in the toddler years. Autism is linked to epilepsy and may lead to other mental health disorders if not addressed immediately.</p>
+        </div>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffede3" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,122.7C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
@@ -70,6 +80,22 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#ffffff" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,138.7C480,149,600,171,720,181.3C840,192,960,192,1080,176C1200,160,1320,128,1380,112L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         <p>Made with ❤️ in <a href="https://www.facebook.com/Gnaec.edu/" target="_blank">GN.AEC</a><span>, Fuvahmulah</span></p>    
     </footer>
+
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+
+        for (let i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>
